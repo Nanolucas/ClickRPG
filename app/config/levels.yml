@@ -1,0 +1,51 @@
+parameters:
+    level:
+        1: 
+          title:  'Level One - Not straightforward'
+          message:  'A frog does not make a good truck driver'
+          algorithm:  'Backwards'
+          difficulty:  1
+          show_frequency: false
+        2: 
+          title:  'Level Two - A little mixed up'
+          message:  'Tuesday is coming, did you bring your umbrella?'
+          algorithm:  'Backwards'
+          difficulty:  2
+          show_frequency: false
+        3: 
+          title:  'Level Three - Back to basics'
+          message:  'Brick and mortar houses are the way to go'
+          algorithm:  'Backwards'
+          difficulty:  3
+          show_frequency: false
+        4: 
+          title:  'Level Four - A ROTten One'
+          message:  'When life gives you lemons, give up'
+          algorithm:  'Rot'
+          difficulty:  1
+          show_frequency: false
+        5: 
+          title:  'Level Five - Half Rotten'
+          message:  'Time you enjoy wasting is not time wasted'
+          algorithm:  'Rot'
+          difficulty:  13
+          show_frequency: false
+        6: 
+          title:  'Level Six - At least one of each'
+          #message:  'Pack my box with five dozen liquor jugs'
+          message:  'abc bapples beat each other'
+          algorithm:  'Morse'
+          difficulty:  1
+          show_frequency: false
+        7: 
+          title:  "Level Seven - Let's get a little random"
+          message:  'Left facing mirrors do not see things coming right at them'
+          algorithm:  'RandomSubstitution'
+          difficulty:  1
+          show_frequency: true
+        8: 
+          title:  'Level Eight - So random!!'
+          message:  'Who ate the last cookie from the jar? How rude!'
+          algorithm:  'RandomSubstitution'
+          difficulty:  2
+          show_frequency: true

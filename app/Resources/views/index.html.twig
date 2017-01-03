@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block javascripts %}
+<script src="{{ asset('js/item.js') }}"></script>
+<script src="{{ asset('js/shop.js') }}"></script>
+<script src="{{ asset('js/level.js') }}"></script>
+<script src="{{ asset('js/player.js') }}"></script>
+<script src="{{ asset('js/monster.js') }}"></script>
+<script src="{{ asset('js/clickrpg.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+	<div id="main_container">
+		<div class="column-left">
+			<div id="inventory_currency" class="left">
+				<h3>Moxie</h3>
+				<span id="moxie_count"></span>
+			</div>
+			<div id="inventory_items" class="left">
+				<h3>Inventory</h3>
+				<div id="weapon">Weapon: <span>N/A</span></div>
+				<div id="armour">Armour: <span>N/A</span></div>
+				<div id="helm">Helm: <span>N/A</span></div>
+				<div id="boots">Boots: <span>N/A</span></div>
+				<div id="amulet">Amulet: <span>N/A</span></div>
+			</div>
+		</div>
+		<div class="column-center">
+			<div id="adventure_box">
+				<div id="monster_box">
+					<div id="monster_name"></div>
+					<div id="monster_body">/\O/\</div>
+					<div id="monster_health">
+						<span id="monster_health_display">
+							<span id="monster_health_current">0</span> / <span id="monster_health_max">0</span>
+						</span>
+						<span id="monster_dead">DEAD</span>
+					</div>
+				</div>
+				<div id="treasure_box">
+					<h3>Treasure</h3>
+					+ <span id="treasure_moxie">0</span> Moxie
+					<br>
+					<button id="next_level">Next &gt;&gt;</button>
+				</div>
+			</div>
+		</div>
+		<div class="column-right">
+			<div id="action_box" class="right">
+				<h3>Action</h3>
+				<button type="button" id="moxie_booster">Attack</button>
+			</div>
+			<div id="shop_items" class="right">
+				<h3>Shop</h3>
+			</div>
+		</div>
+	</div>
+{% endblock %}

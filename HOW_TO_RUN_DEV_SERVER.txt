@@ -1,0 +1,1 @@
+php C:/Users/Luke/Desktop/Clickr/app/console server:run
